@@ -1,4 +1,4 @@
-const eqArrays = function(actual,expected) {
+const eqArrays = function(actual, expected) {
   if (actual.length !== expected.length) {
     return false;
   }
@@ -10,8 +10,8 @@ const eqArrays = function(actual,expected) {
   return true;
 };
 
-const assertArraysEqual = (arrayOne,arrayTwo) => {
-  console.log(eqArrays(arrayOne,arrayTwo));
+const assertArraysEqual = (arrayOne, arrayTwo) => {
+  console.log(eqArrays(arrayOne, arrayTwo));
 };
 
-assertArraysEqual([1,2,3],[1,2,4]);
+assertArraysEqual([1, 2, 3], [1, 2, 4]);
