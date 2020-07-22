@@ -1,4 +1,6 @@
 const eqArrays = function(actual, expected) {
+  console.log("this is actual:", actual);
+  console.log("this is expected:", expected);
   if (actual.length !== expected.length) {
     return false;
   }
@@ -11,6 +13,8 @@ const eqArrays = function(actual, expected) {
 };
 
 const assertArraysEqual = (arrayOne, arrayTwo) => {
+  // console.log("this is arrayOne:", arrayOne);
+  // console.log("this is arrayTwo:", arrayTwo);
   console.log(eqArrays(arrayOne, arrayTwo));
 };
 
