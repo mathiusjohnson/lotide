@@ -1,6 +1,6 @@
 const findKeyByValue = (object, value) => {
   for (const prop in object) {
-    if (object.hasOwnProperty(prop)) {
+    if (Object.prototype.hasOwnProperty.call(object, prop)) {
       if (object[prop] === value) {
         return prop;
       }
