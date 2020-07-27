@@ -13,7 +13,7 @@ const isEqual = (a, b) => {
   return keys.every(k => isEqual(a[k], b[k]));
 };
 
-assertEqual(isEqual([[[2, [4, 4]], 3], [4]], [[2, 3], [4]]), false);
+assertEqual(isEqual([[[2, [4, 4]], 3], [4]], [[[2, [4, 4]], 3], [4]]), true);
 
 assertEqual(isEqual([[2, 3], [4]], [[2, 3], [4, 5]]), false);
 assertEqual(isEqual([[2, 3], [4]], [[2, 3], 4]), false);
