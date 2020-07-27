@@ -2,7 +2,7 @@ const assertEqual = require('../assertEqual');
 const head = require('../head');
 const tail = require('../tail');
 const eqArrays = require('../eqArrays');
-
+const assertArraysEqual = require('../assertArraysEqual');
 
 // ASSERT EQUAL TEST:
 console.log("these are assert equal Tests:");
@@ -46,3 +46,7 @@ assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => false
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+
+//ASSERT ARRAYS EQUAL TEST:
+console.log("these are assertArraysEqual tests:");
+assertArraysEqual([1, 2, 3], [1, 2, 4]);
