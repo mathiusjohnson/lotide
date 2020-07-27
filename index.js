@@ -17,22 +17,22 @@ const without = require('./without');
 const takeUntil = require('../lotide/takeUntil/takeUntil');
 
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  assertArraysEqual: assertArraysEqual,
-  assertObjectsEqual: assertObjectsEqual,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  eqArrays: eqArrays,
-  eqObjects: eqObjects,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  letterPositions: letterPositions,
-  map: map,
-  recursiveEqArrays: recursiveEqArrays,
-  recursiveEqObjects: recursiveEqObjects,
-  without: without,
-  takeUntil: takeUntil
+  head,
+  tail,
+  middle,
+  assertArraysEqual,
+  assertObjectsEqual,
+  countLetters,
+  countOnly,
+  eqArrays,
+  eqObjects,
+  findKey,
+  findKeyByValue,
+  letterPositions,
+  map,
+  recursiveEqArrays,
+  recursiveEqObjects,
+  without,
+  takeUntil
 	
 };
