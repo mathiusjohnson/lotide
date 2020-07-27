@@ -39,3 +39,5 @@ const resultOne = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang":
 assertEqual(resultOne["Jason"], 1);
 assertEqual(resultOne["Karima"], undefined);
 assertEqual(resultOne["Fang"], 2);
+
+module.exports = (countOnly);

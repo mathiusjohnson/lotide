@@ -26,3 +26,5 @@ const string = "LHL";
 const resultOne = countLetters(string, { "L": true });
 
 assertEqual(resultOne["L"], 2);
+
+module.exports = (countLetters);

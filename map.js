@@ -11,3 +11,5 @@ const map = function(array, callback) {
 
 const results1 = map(words, word => word.length);
 console.log(results1);
+
+module.exports = (map);

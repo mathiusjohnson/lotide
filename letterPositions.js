@@ -35,3 +35,5 @@ console.log("this is letter Positions function:", letterPositions("hello"));
 // const string = "lighthouse in the house";
 // const resultOne = letterPositions(string, { "H": true, "e": true, "l": true, "o": true });
 assertArraysEqual(letterPositions("hello").e, [1]);
+
+module.exports = (letterPositions);

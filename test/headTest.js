@@ -1,4 +1,3 @@
-const tail = require('../tail');
 const eqArrays = require('../eqArrays');
 const assertArraysEqual = require('../assertArraysEqual');
 const chai = require('chai');
@@ -13,12 +12,7 @@ describe("#head", () => {
   it("returns '5' for ['5']", () => {
     assert.strictEqual(head(['5']), '5');
   });
-  it("returns the tail of an array", () => {
-    const result = tail(["Hello", "Lighthouse", "Labs"]);
-    assert.equal(result[0], "Lighthouse");
-    assert.equal(result[1], "Labs");
-    assert.equal(result.length, 2);
-  });
+
   it("returns true when arrays are equal value", () => {
     assert.strictEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
     assert.strictEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);// => false
