@@ -15,6 +15,7 @@ const recursiveEqArrays = require('./recursiveEqArrays');
 const recursiveEqObjects = require('./recursiveEqObjects');
 const without = require('./without');
 const takeUntil = require('../lotide/takeUntil/takeUntil');
+const flatten = require('../lotide/flatten');
 
 module.exports = {
   head,
@@ -33,6 +34,7 @@ module.exports = {
   recursiveEqArrays,
   recursiveEqObjects,
   without,
-  takeUntil
+  takeUntil,
+  flatten
 	
 };

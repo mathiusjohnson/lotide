@@ -1,20 +1,5 @@
-const eqObjects = (object1, object2) => {
-  let arrayOne = Object.keys(object1);
-  let arrayTwo = Object.keys(object2);
-  if (arrayOne.length !== arrayTwo.length) {
-    return false;
-  } for (const key of arrayOne) {
-    console.log(key);
-    if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
-      if (!eqObjects(object1[key], object2[key])) {
-        return false;
-      }
-    } else if (object1[key] !== object2[key]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqObjects = require('../lotide/eqObjects');
+
 
 const assertObjectsEqual = (objectOne, objectTwo) => {
   console.log(eqObjects(objectOne, objectTwo));
